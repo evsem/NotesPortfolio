@@ -1,0 +1,27 @@
+.pensil__wrapper {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bcbcbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  .pensil__pensil {
+    width: 26px;
+    height: 4px;
+    background-color: #454545;
+    border: none;
+    border-radius: 10px 4px 4px 10px;
+    transform: rotate(-54deg);
+    .pensil__rectangle {
+      width: 2px;
+      height: 100%;
+      background-color: #686868;
+      position: relative;
+      left: 20px;
+    }
+  }
+}

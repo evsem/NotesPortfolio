@@ -1,0 +1,32 @@
+.close {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bcbcbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    background-color: #b4b4b4;
+  }
+  .line {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: #454545;
+    &:first-child {
+      transform: rotate(45deg);
+      position: relative;
+      left: 9px;
+    }
+    &:last-child {
+      transform: rotate(-45deg);
+      position: relative;
+      right: 9px;
+    }
+  }
+}

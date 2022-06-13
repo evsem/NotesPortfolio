@@ -1,0 +1,17 @@
+.mainInput {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #f3f3f3;
+  background-color: transparent;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 20px;
+  color: #f3f3f3;
+  &::placeholder {
+    color: #f3f3f3;
+  }
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
