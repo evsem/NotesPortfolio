@@ -1,11 +1,11 @@
 import React from "react"
-import "./Close.scss"
+import st from "./Close.module.scss"
 
 const Close = (props) => {
   return (
-    <div className="close" {...props}>
-      <span className="line"></span>
-      <span className="line"></span>
+    <div className={st.close} {...props}>
+      <span className={st.line}></span>
+      <span className={st.line}></span>
     </div>
   )
 }

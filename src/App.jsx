@@ -40,14 +40,16 @@ const App = () => {
       <MainInput
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        placeholder="search"
+        placeholder="title search"
         style={{ marginTop: 12 }}
       />
 
       {notes.length ? (
         <List propsForList={searchedNotes} removeNote={removeNote} />
       ) : (
-        <h2 className="warning__title">no notes</h2>
+        <div className="warning__title-box">
+          <h2 className="warning__title">no notes</h2>
+        </div>
       )}
     </div>
   )

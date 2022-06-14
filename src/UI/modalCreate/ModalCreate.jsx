@@ -35,7 +35,7 @@ const ModalCreate = ({ addNoteFunc, visible, setVisible }) => {
             onChange={(e) => setParam({ ...param, title: e.target.value })}
             style={{
               marginBottom: 24,
-              color: "#6B6B6B",
+              color: "#4a4749",
             }}
           />
           <Textarea

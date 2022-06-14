@@ -1,9 +1,9 @@
 import React from "react"
-import "./MainButton.scss"
+import st from "./MainButton.module.scss"
 
 const MainButton = ({ children, ...props }) => {
   return (
-    <button {...props} className="mainButton">
+    <button {...props} className={st.mainButton}>
       {children}
     </button>
   )
