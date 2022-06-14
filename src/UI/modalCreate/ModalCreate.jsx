@@ -16,8 +16,6 @@ const ModalCreate = ({ addNoteFunc, visible, setVisible }) => {
 
     if (param.title !== "" && param.descr !== "") {
       addNoteFunc(newNote)
-    } else {
-      console.error("Error")
     }
 
     setParam({ title: "", descr: "" })
