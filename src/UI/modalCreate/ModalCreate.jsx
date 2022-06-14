@@ -13,7 +13,13 @@ const ModalCreate = ({ addNoteFunc, visible, setVisible }) => {
       ...param,
       id: Date.now(),
     }
-    addNoteFunc(newNote)
+
+    if (param.title !== "" && param.descr !== "") {
+      addNoteFunc(newNote)
+    } else {
+      console.error("Error")
+    }
+
     setParam({ title: "", descr: "" })
   }
 
